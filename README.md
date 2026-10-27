@@ -1,2 +1,9 @@
 # WS2627_AHE_Lab_Team_A2
-Repository for Advanceed Hardware Engineering Lab. Team A2. Winter Semester 2026/27
+
+Advanced Hardware Engineering Lab - WS 26/27
+Hochschule Hamm-Lippstadt
+
+## Team Members
+- Afruz, Nadia
+- Kamal, Arfat
+- Nnachi-Egwu, Nnaemeka
