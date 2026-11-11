@@ -1,6 +1,6 @@
 # Lab 02: MicroBlaze IP
 
-Team A2
+by Team A2
 
 ## Overview
 
@@ -19,6 +19,20 @@ Tools: Vivado and Vitis 2025.2.1.
 | AXI UART Lite (9600 baud, 8N1) | Serial port to the PC via the board's USB-UART |
 | AXI Interrupt Controller + Concat | Collects the UART interrupt for the CPU |
 | Clocking Wizard + Processor System Reset | 100 MHz system clock and reset |
+
+![Block design](block_design.png)
+
+### Results
+
+| Metric | Value |
+|---|---|
+| Worst negative slack (WNS) | 1.617 ns (all user specified timing constraints met) |
+| LUTs |  |
+| Flip-flops |  |
+| Block RAM |  |
+
+![Timing summary](timing_summary.png)
+![Utilization](utilization.png)
 
 ### Hardware flow
 
@@ -42,9 +56,9 @@ Tools: Vivado and Vitis 2025.2.1.
 3. Built the application and ran it on the board (Run programs the FPGA and loads the ELF into local memory through the MDM).
 4. Read the output in the serial terminal: COM5, 9600 baud, 8 data bits, no parity, 1 stop bit.
 
-Source: [`src/helloworld.c`](src/helloworld.c)
+Source: [`src/helloworld.c`](helloworld.c)
 
-![Terminal output](screenshots/terminal_output.png)
+![Terminal output](helloWorld_Terminal.png)
 
 ## Problems and fixes
 
