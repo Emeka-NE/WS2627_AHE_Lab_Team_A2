@@ -13,9 +13,9 @@ The research also covers key concepts such as embedded DSLs, parameterization, a
 
 ## Team Members
 
-- Nadia Afruz
-- Emeka
-- Arafat Kamal 
+- Afruz, Nadia
+- Kamal, Arfat
+- Nnachi-Egwu, Nnaemeka 
 
 ## Repository Organization
 
