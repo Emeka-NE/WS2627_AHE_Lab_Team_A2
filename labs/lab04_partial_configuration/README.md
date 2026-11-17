@@ -109,6 +109,7 @@ loaded: RM A (pass-through) in=040A out=040A
 loaded: RM A (pass-through) in=041D out=041D
 ```
 One line reads `out=FFFF`, identified as `unknown`, caught exactly during the reconfiguration window.
+The complete serial terminal session is included in `logs/serial_terminal_full_log.txt`.
 
 ---
 
