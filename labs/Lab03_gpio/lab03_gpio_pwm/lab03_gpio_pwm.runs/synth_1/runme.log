@@ -1,0 +1,439 @@
+
+*** Running vivado
+    with args -log design_microblaze_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_microblaze_wrapper.tcl
+
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Mon Nov 16 15:03:01 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_microblaze_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:14 . Memory (MB): peak = 497.133 ; gain = 214.809
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/HP/Documents/AHE_Lab/project_1/pwm_axi_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.1/Vivado/data/ip'.
+INFO: [Project 1-5698] Found the below utility IPs instantiated in block design C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.srcs/sources_1/bd/design_microblaze/design_microblaze.bd which have equivalent inline hdl with improved performance and reduced diskspace.
+It is recommended to migrate these utility IPs to inline hdl  using the command upgrade_project -migrate_to_inline_hdl.  The utility IPs may be deprecated in future releases.
+More information on inline hdl is available in UG994.
+Utility IP Component Instances:
+ design_microblaze_microblaze_0_xlconcat_0
+add_files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 534.391 ; gain = 34.297
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.srcs/utils_1/imports/synth_1/design_microblaze_wrapper.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.srcs/utils_1/imports/synth_1/design_microblaze_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top design_microblaze_wrapper -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 20108
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1236.754 ; gain = 495.090
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_microblaze_wrapper' [C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/hdl/design_microblaze_wrapper.vhd:31]
+INFO: [Synth 8-3491] module 'design_microblaze' declared at 'c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/synth/design_microblaze.vhd:1810' bound to instance 'design_microblaze_i' of component 'design_microblaze' [C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/hdl/design_microblaze_wrapper.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'design_microblaze' [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/synth/design_microblaze.vhd:1830]
+INFO: [Synth 8-3491] module 'design_microblaze_axi_gpio_0_0' declared at 'C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.runs/synth_1/.Xil/Vivado-4416-DESKTOP-PUNR6ED/realtime/design_microblaze_axi_gpio_0_0_stub.vhdl:6' bound to instance 'axi_gpio_0' of component 'design_microblaze_axi_gpio_0_0' [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/synth/design_microblaze.vhd:2232]
+INFO: [Synth 8-638] synthesizing module 'design_microblaze_axi_gpio_0_0' [C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.runs/synth_1/.Xil/Vivado-4416-DESKTOP-PUNR6ED/realtime/design_microblaze_axi_gpio_0_0_stub.vhdl:39]
+INFO: [Synth 8-3491] module 'design_microblaze_axi_gpio_1_0' declared at 'C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.runs/synth_1/.Xil/Vivado-4416-DESKTOP-PUNR6ED/realtime/design_microblaze_axi_gpio_1_0_stub.vhdl:6' bound to instance 'axi_gpio_1' of component 'design_microblaze_axi_gpio_1_0' [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/synth/design_microblaze.vhd:2256]
+INFO: [Synth 8-638] synthesizing module 'design_microblaze_axi_gpio_1_0' [C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.runs/synth_1/.Xil/Vivado-4416-DESKTOP-PUNR6ED/realtime/design_microblaze_axi_gpio_1_0_stub.vhdl:39]
+INFO: [Synth 8-3491] module 'design_microblaze_axi_uartlite_0_0' declared at 'C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.runs/synth_1/.Xil/Vivado-4416-DESKTOP-PUNR6ED/realtime/design_microblaze_axi_uartlite_0_0_stub.vhdl:6' bound to instance 'axi_uartlite_0' of component 'design_microblaze_axi_uartlite_0_0' [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/synth/design_microblaze.vhd:2280]
+INFO: [Synth 8-638] synthesizing module 'design_microblaze_axi_uartlite_0_0' [C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.runs/synth_1/.Xil/Vivado-4416-DESKTOP-PUNR6ED/realtime/design_microblaze_axi_uartlite_0_0_stub.vhdl:40]
+INFO: [Synth 8-3491] module 'design_microblaze_clk_wiz_1_0' declared at 'C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.runs/synth_1/.Xil/Vivado-4416-DESKTOP-PUNR6ED/realtime/design_microblaze_clk_wiz_1_0_stub.vhdl:6' bound to instance 'clk_wiz_1' of component 'design_microblaze_clk_wiz_1_0' [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/synth/design_microblaze.vhd:2305]
+INFO: [Synth 8-638] synthesizing module 'design_microblaze_clk_wiz_1_0' [C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.runs/synth_1/.Xil/Vivado-4416-DESKTOP-PUNR6ED/realtime/design_microblaze_clk_wiz_1_0_stub.vhdl:18]
+INFO: [Synth 8-3491] module 'design_microblaze_mdm_1_0' declared at 'C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.runs/synth_1/.Xil/Vivado-4416-DESKTOP-PUNR6ED/realtime/design_microblaze_mdm_1_0_stub.vhdl:6' bound to instance 'mdm_1' of component 'design_microblaze_mdm_1_0' [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/synth/design_microblaze.vhd:2312]
+INFO: [Synth 8-638] synthesizing module 'design_microblaze_mdm_1_0' [C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.runs/synth_1/.Xil/Vivado-4416-DESKTOP-PUNR6ED/realtime/design_microblaze_mdm_1_0_stub.vhdl:28]
+INFO: [Synth 8-3491] module 'design_microblaze_microblaze_0_0' declared at 'C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.runs/synth_1/.Xil/Vivado-4416-DESKTOP-PUNR6ED/realtime/design_microblaze_microblaze_0_0_stub.vhdl:6' bound to instance 'microblaze_0' of component 'design_microblaze_microblaze_0_0' [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/synth/design_microblaze.vhd:2325]
+INFO: [Synth 8-638] synthesizing module 'design_microblaze_microblaze_0_0' [C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.runs/synth_1/.Xil/Vivado-4416-DESKTOP-PUNR6ED/realtime/design_microblaze_microblaze_0_0_stub.vhdl:70]
+INFO: [Synth 8-3491] module 'design_microblaze_microblaze_0_axi_intc_0' declared at 'C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.runs/synth_1/.Xil/Vivado-4416-DESKTOP-PUNR6ED/realtime/design_microblaze_microblaze_0_axi_intc_0_stub.vhdl:6' bound to instance 'microblaze_0_axi_intc' of component 'design_microblaze_microblaze_0_axi_intc_0' [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/synth/design_microblaze.vhd:2411]
+INFO: [Synth 8-638] synthesizing module 'design_microblaze_microblaze_0_axi_intc_0' [C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.runs/synth_1/.Xil/Vivado-4416-DESKTOP-PUNR6ED/realtime/design_microblaze_microblaze_0_axi_intc_0_stub.vhdl:43]
+INFO: [Synth 8-638] synthesizing module 'design_microblaze_microblaze_0_axi_periph_0' [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/synth/design_microblaze.vhd:1282]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_Z78ZQ3' [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/synth/design_microblaze.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_Z78ZQ3' (0#1) [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/synth/design_microblaze.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_4J0VIY' [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/synth/design_microblaze.vhd:159]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_4J0VIY' (0#1) [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/synth/design_microblaze.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_19FW0UX' [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/synth/design_microblaze.vhd:264]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_19FW0UX' (0#1) [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/synth/design_microblaze.vhd:264]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_1KYKTG8' [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/synth/design_microblaze.vhd:371]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_1KYKTG8' (0#1) [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/synth/design_microblaze.vhd:371]
+INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_8RV7HA' [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/synth/design_microblaze.vhd:472]
+INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_8RV7HA' (0#1) [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/synth/design_microblaze.vhd:472]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1JEGA91' [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/synth/design_microblaze.vhd:1093]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1JEGA91' (0#1) [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/synth/design_microblaze.vhd:1093]
+INFO: [Synth 8-3491] module 'design_microblaze_microblaze_0_axi_periph_imp_xbar_0' declared at 'C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.runs/synth_1/.Xil/Vivado-4416-DESKTOP-PUNR6ED/realtime/design_microblaze_microblaze_0_axi_periph_imp_xbar_0_stub.vhdl:6' bound to instance 'xbar' of component 'design_microblaze_microblaze_0_axi_periph_imp_xbar_0' [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/synth/design_microblaze.vhd:1690]
+INFO: [Synth 8-638] synthesizing module 'design_microblaze_microblaze_0_axi_periph_imp_xbar_0' [C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.runs/synth_1/.Xil/Vivado-4416-DESKTOP-PUNR6ED/realtime/design_microblaze_microblaze_0_axi_periph_imp_xbar_0_stub.vhdl:58]
+INFO: [Synth 8-256] done synthesizing module 'design_microblaze_microblaze_0_axi_periph_0' (0#1) [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/synth/design_microblaze.vhd:1282]
+INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_1QJUQGS' [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/synth/design_microblaze.vhd:556]
+INFO: [Synth 8-3491] module 'design_microblaze_dlmb_bram_if_cntlr_0' declared at 'C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.runs/synth_1/.Xil/Vivado-4416-DESKTOP-PUNR6ED/realtime/design_microblaze_dlmb_bram_if_cntlr_0_stub.vhdl:6' bound to instance 'dlmb_bram_if_cntlr' of component 'design_microblaze_dlmb_bram_if_cntlr_0' [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/synth/design_microblaze.vhd:728]
+INFO: [Synth 8-638] synthesizing module 'design_microblaze_dlmb_bram_if_cntlr_0' [C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.runs/synth_1/.Xil/Vivado-4416-DESKTOP-PUNR6ED/realtime/design_microblaze_dlmb_bram_if_cntlr_0_stub.vhdl:38]
+INFO: [Synth 8-3491] module 'design_microblaze_dlmb_v10_0' declared at 'C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.runs/synth_1/.Xil/Vivado-4416-DESKTOP-PUNR6ED/realtime/design_microblaze_dlmb_v10_0_stub.vhdl:6' bound to instance 'dlmb_v10' of component 'design_microblaze_dlmb_v10_0' [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/synth/design_microblaze.vhd:782]
+INFO: [Synth 8-638] synthesizing module 'design_microblaze_dlmb_v10_0' [C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.runs/synth_1/.Xil/Vivado-4416-DESKTOP-PUNR6ED/realtime/design_microblaze_dlmb_v10_0_stub.vhdl:43]
+INFO: [Synth 8-3491] module 'design_microblaze_ilmb_bram_if_cntlr_0' declared at 'C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.runs/synth_1/.Xil/Vivado-4416-DESKTOP-PUNR6ED/realtime/design_microblaze_ilmb_bram_if_cntlr_0_stub.vhdl:6' bound to instance 'ilmb_bram_if_cntlr' of component 'design_microblaze_ilmb_bram_if_cntlr_0' [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/synth/design_microblaze.vhd:810]
+INFO: [Synth 8-638] synthesizing module 'design_microblaze_ilmb_bram_if_cntlr_0' [C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.runs/synth_1/.Xil/Vivado-4416-DESKTOP-PUNR6ED/realtime/design_microblaze_ilmb_bram_if_cntlr_0_stub.vhdl:38]
+INFO: [Synth 8-3491] module 'design_microblaze_ilmb_v10_0' declared at 'C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.runs/synth_1/.Xil/Vivado-4416-DESKTOP-PUNR6ED/realtime/design_microblaze_ilmb_v10_0_stub.vhdl:6' bound to instance 'ilmb_v10' of component 'design_microblaze_ilmb_v10_0' [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/synth/design_microblaze.vhd:864]
+INFO: [Synth 8-638] synthesizing module 'design_microblaze_ilmb_v10_0' [C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.runs/synth_1/.Xil/Vivado-4416-DESKTOP-PUNR6ED/realtime/design_microblaze_ilmb_v10_0_stub.vhdl:43]
+INFO: [Synth 8-3491] module 'design_microblaze_lmb_bram_0' declared at 'C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.runs/synth_1/.Xil/Vivado-4416-DESKTOP-PUNR6ED/realtime/design_microblaze_lmb_bram_0_stub.vhdl:6' bound to instance 'lmb_bram' of component 'design_microblaze_lmb_bram_0' [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/synth/design_microblaze.vhd:892]
+INFO: [Synth 8-638] synthesizing module 'design_microblaze_lmb_bram_0' [C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.runs/synth_1/.Xil/Vivado-4416-DESKTOP-PUNR6ED/realtime/design_microblaze_lmb_bram_0_stub.vhdl:34]
+INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_1QJUQGS' (0#1) [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/synth/design_microblaze.vhd:556]
+INFO: [Synth 8-3491] module 'design_microblaze_microblaze_0_xlconcat_0' declared at 'c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/ip/design_microblaze_microblaze_0_xlconcat_0/synth/design_microblaze_microblaze_0_xlconcat_0.v:53' bound to instance 'microblaze_0_xlconcat' of component 'design_microblaze_microblaze_0_xlconcat_0' [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/synth/design_microblaze.vhd:2587]
+INFO: [Synth 8-6157] synthesizing module 'design_microblaze_microblaze_0_xlconcat_0' [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/ip/design_microblaze_microblaze_0_xlconcat_0/synth/design_microblaze_microblaze_0_xlconcat_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_7_xlconcat' [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/ipshared/9c1a/hdl/xlconcat_v2_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_7_xlconcat' (0#1) [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/ipshared/9c1a/hdl/xlconcat_v2_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'design_microblaze_microblaze_0_xlconcat_0' (0#1) [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/ip/design_microblaze_microblaze_0_xlconcat_0/synth/design_microblaze_microblaze_0_xlconcat_0.v:53]
+INFO: [Synth 8-3491] module 'design_microblaze_pwm_axi_0_0' declared at 'C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.runs/synth_1/.Xil/Vivado-4416-DESKTOP-PUNR6ED/realtime/design_microblaze_pwm_axi_0_0_stub.vhdl:6' bound to instance 'pwm_axi_0' of component 'design_microblaze_pwm_axi_0_0' [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/synth/design_microblaze.vhd:2592]
+INFO: [Synth 8-638] synthesizing module 'design_microblaze_pwm_axi_0_0' [C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.runs/synth_1/.Xil/Vivado-4416-DESKTOP-PUNR6ED/realtime/design_microblaze_pwm_axi_0_0_stub.vhdl:42]
+INFO: [Synth 8-3491] module 'design_microblaze_rst_clk_wiz_1_100M_0' declared at 'C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.runs/synth_1/.Xil/Vivado-4416-DESKTOP-PUNR6ED/realtime/design_microblaze_rst_clk_wiz_1_100M_0_stub.vhdl:6' bound to instance 'rst_clk_wiz_1_100M' of component 'design_microblaze_rst_clk_wiz_1_100M_0' [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/synth/design_microblaze.vhd:2619]
+INFO: [Synth 8-638] synthesizing module 'design_microblaze_rst_clk_wiz_1_100M_0' [C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.runs/synth_1/.Xil/Vivado-4416-DESKTOP-PUNR6ED/realtime/design_microblaze_rst_clk_wiz_1_100M_0_stub.vhdl:28]
+INFO: [Synth 8-256] done synthesizing module 'design_microblaze' (0#1) [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/synth/design_microblaze.vhd:1830]
+INFO: [Synth 8-256] done synthesizing module 'design_microblaze_wrapper' (0#1) [C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/hdl/design_microblaze_wrapper.vhd:31]
+WARNING: [Synth 8-7129] Port In1[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In2[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In3[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In4[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In5[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In6[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In7[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In8[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In9[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In10[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In11[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In12[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In13[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In14[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In15[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In16[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In17[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In20[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In21[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In22[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In25[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In26[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In27[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In28[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In29[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In32[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In33[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In34[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In35[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In36[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In37[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In38[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In39[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In40[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In41[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In42[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In43[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In44[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In45[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In46[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In47[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In48[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In49[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In50[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In51[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In52[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In53[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In54[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In55[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In56[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In57[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In58[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In59[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In60[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In61[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In62[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In63[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In64[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In65[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In66[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In67[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In68[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In69[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In70[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In71[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In72[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In73[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In74[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In75[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In76[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In77[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In78[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In79[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In80[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In81[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In82[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In83[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In84[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In85[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In86[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In87[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In88[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In89[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In90[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In91[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In92[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In93[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In94[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In95[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In96[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In97[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In98[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In99[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In100[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1357.426 ; gain = 615.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1357.426 ; gain = 615.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1357.426 ; gain = 615.762
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.067 . Memory (MB): peak = 1357.426 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/ip/design_microblaze_microblaze_0_0/design_microblaze_microblaze_0_0/design_microblaze_microblaze_0_0_in_context.xdc] for cell 'design_microblaze_i/microblaze_0'
+Finished Parsing XDC File [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/ip/design_microblaze_microblaze_0_0/design_microblaze_microblaze_0_0/design_microblaze_microblaze_0_0_in_context.xdc] for cell 'design_microblaze_i/microblaze_0'
+Parsing XDC File [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/ip/design_microblaze_dlmb_v10_0/design_microblaze_dlmb_v10_0/design_microblaze_dlmb_v10_0_in_context.xdc] for cell 'design_microblaze_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/ip/design_microblaze_dlmb_v10_0/design_microblaze_dlmb_v10_0/design_microblaze_dlmb_v10_0_in_context.xdc] for cell 'design_microblaze_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/ip/design_microblaze_ilmb_v10_0/design_microblaze_ilmb_v10_0/design_microblaze_dlmb_v10_0_in_context.xdc] for cell 'design_microblaze_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/ip/design_microblaze_ilmb_v10_0/design_microblaze_ilmb_v10_0/design_microblaze_dlmb_v10_0_in_context.xdc] for cell 'design_microblaze_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/ip/design_microblaze_dlmb_bram_if_cntlr_0/design_microblaze_dlmb_bram_if_cntlr_0/design_microblaze_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_microblaze_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/ip/design_microblaze_dlmb_bram_if_cntlr_0/design_microblaze_dlmb_bram_if_cntlr_0/design_microblaze_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_microblaze_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/ip/design_microblaze_ilmb_bram_if_cntlr_0/design_microblaze_ilmb_bram_if_cntlr_0/design_microblaze_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_microblaze_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/ip/design_microblaze_ilmb_bram_if_cntlr_0/design_microblaze_ilmb_bram_if_cntlr_0/design_microblaze_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_microblaze_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/ip/design_microblaze_lmb_bram_0/design_microblaze_lmb_bram_0/design_microblaze_lmb_bram_0_in_context.xdc] for cell 'design_microblaze_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/ip/design_microblaze_lmb_bram_0/design_microblaze_lmb_bram_0/design_microblaze_lmb_bram_0_in_context.xdc] for cell 'design_microblaze_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/ip/design_microblaze_microblaze_0_axi_periph_imp_xbar_0/design_microblaze_microblaze_0_axi_periph_imp_xbar_0/design_microblaze_microblaze_0_axi_periph_imp_xbar_0_in_context.xdc] for cell 'design_microblaze_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/ip/design_microblaze_microblaze_0_axi_periph_imp_xbar_0/design_microblaze_microblaze_0_axi_periph_imp_xbar_0/design_microblaze_microblaze_0_axi_periph_imp_xbar_0_in_context.xdc] for cell 'design_microblaze_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/ip/design_microblaze_microblaze_0_axi_intc_0/design_microblaze_microblaze_0_axi_intc_0/design_microblaze_microblaze_0_axi_intc_0_in_context.xdc] for cell 'design_microblaze_i/microblaze_0_axi_intc'
+Finished Parsing XDC File [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/ip/design_microblaze_microblaze_0_axi_intc_0/design_microblaze_microblaze_0_axi_intc_0/design_microblaze_microblaze_0_axi_intc_0_in_context.xdc] for cell 'design_microblaze_i/microblaze_0_axi_intc'
+Parsing XDC File [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/ip/design_microblaze_mdm_1_0/design_microblaze_mdm_1_0/design_microblaze_mdm_1_0_in_context.xdc] for cell 'design_microblaze_i/mdm_1'
+Finished Parsing XDC File [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/ip/design_microblaze_mdm_1_0/design_microblaze_mdm_1_0/design_microblaze_mdm_1_0_in_context.xdc] for cell 'design_microblaze_i/mdm_1'
+Parsing XDC File [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/ip/design_microblaze_clk_wiz_1_0/design_microblaze_clk_wiz_1_0/design_microblaze_clk_wiz_1_0_in_context.xdc] for cell 'design_microblaze_i/clk_wiz_1'
+Finished Parsing XDC File [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/ip/design_microblaze_clk_wiz_1_0/design_microblaze_clk_wiz_1_0/design_microblaze_clk_wiz_1_0_in_context.xdc] for cell 'design_microblaze_i/clk_wiz_1'
+Parsing XDC File [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/ip/design_microblaze_rst_clk_wiz_1_100M_0/design_microblaze_rst_clk_wiz_1_100M_0/design_microblaze_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'design_microblaze_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/ip/design_microblaze_rst_clk_wiz_1_100M_0/design_microblaze_rst_clk_wiz_1_100M_0/design_microblaze_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'design_microblaze_i/rst_clk_wiz_1_100M'
+Parsing XDC File [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/ip/design_microblaze_axi_uartlite_0_0/design_microblaze_axi_uartlite_0_0/design_microblaze_axi_uartlite_0_0_in_context.xdc] for cell 'design_microblaze_i/axi_uartlite_0'
+Finished Parsing XDC File [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/ip/design_microblaze_axi_uartlite_0_0/design_microblaze_axi_uartlite_0_0/design_microblaze_axi_uartlite_0_0_in_context.xdc] for cell 'design_microblaze_i/axi_uartlite_0'
+Parsing XDC File [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/ip/design_microblaze_pwm_axi_0_0/design_microblaze_pwm_axi_0_0/design_microblaze_pwm_axi_0_0_in_context.xdc] for cell 'design_microblaze_i/pwm_axi_0'
+Finished Parsing XDC File [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/ip/design_microblaze_pwm_axi_0_0/design_microblaze_pwm_axi_0_0/design_microblaze_pwm_axi_0_0_in_context.xdc] for cell 'design_microblaze_i/pwm_axi_0'
+Parsing XDC File [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/ip/design_microblaze_axi_gpio_0_0/design_microblaze_axi_gpio_0_0/design_microblaze_axi_gpio_0_0_in_context.xdc] for cell 'design_microblaze_i/axi_gpio_0'
+Finished Parsing XDC File [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/ip/design_microblaze_axi_gpio_0_0/design_microblaze_axi_gpio_0_0/design_microblaze_axi_gpio_0_0_in_context.xdc] for cell 'design_microblaze_i/axi_gpio_0'
+Parsing XDC File [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/ip/design_microblaze_axi_gpio_1_0/design_microblaze_axi_gpio_1_0/design_microblaze_axi_gpio_1_0_in_context.xdc] for cell 'design_microblaze_i/axi_gpio_1'
+Finished Parsing XDC File [c:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.gen/sources_1/bd/design_microblaze/ip/design_microblaze_axi_gpio_1_0/design_microblaze_axi_gpio_1_0/design_microblaze_axi_gpio_1_0_in_context.xdc] for cell 'design_microblaze_i/axi_gpio_1'
+Parsing XDC File [C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.srcs/constrs_1/new/lab3_pwm.xdc]
+Finished Parsing XDC File [C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.srcs/constrs_1/new/lab3_pwm.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.srcs/constrs_1/new/lab3_pwm.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_microblaze_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_microblaze_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1357.426 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1357.426 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_microblaze_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1357.426 ; gain = 615.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1357.426 ; gain = 615.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1357.426 ; gain = 615.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1357.426 ; gain = 615.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 1363.625 ; gain = 621.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 1536.176 ; gain = 794.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 1536.887 ; gain = 795.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 1547.367 ; gain = 805.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 1781.641 ; gain = 1039.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 1781.641 ; gain = 1039.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 1781.641 ; gain = 1039.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 1781.641 ; gain = 1039.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 1781.641 ; gain = 1039.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 1781.641 ; gain = 1039.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------------------------------------------+----------+
+|      |BlackBox name                                        |Instances |
++------+-----------------------------------------------------+----------+
+|1     |design_microblaze_microblaze_0_axi_periph_imp_xbar_0 |         1|
+|2     |design_microblaze_axi_gpio_0_0                       |         1|
+|3     |design_microblaze_axi_gpio_1_0                       |         1|
+|4     |design_microblaze_axi_uartlite_0_0                   |         1|
+|5     |design_microblaze_clk_wiz_1_0                        |         1|
+|6     |design_microblaze_mdm_1_0                            |         1|
+|7     |design_microblaze_microblaze_0_0                     |         1|
+|8     |design_microblaze_microblaze_0_axi_intc_0            |         1|
+|9     |design_microblaze_pwm_axi_0_0                        |         1|
+|10    |design_microblaze_rst_clk_wiz_1_100M_0               |         1|
+|11    |design_microblaze_dlmb_bram_if_cntlr_0               |         1|
+|12    |design_microblaze_dlmb_v10_0                         |         1|
+|13    |design_microblaze_ilmb_bram_if_cntlr_0               |         1|
+|14    |design_microblaze_ilmb_v10_0                         |         1|
+|15    |design_microblaze_lmb_bram_0                         |         1|
++------+-----------------------------------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------------------------------------+------+
+|      |Cell                                                      |Count |
++------+----------------------------------------------------------+------+
+|1     |design_microblaze_axi_gpio_0_0_bbox                       |     1|
+|2     |design_microblaze_axi_gpio_1_0_bbox                       |     1|
+|3     |design_microblaze_axi_uartlite_0_0_bbox                   |     1|
+|4     |design_microblaze_clk_wiz_1_0_bbox                        |     1|
+|5     |design_microblaze_dlmb_bram_if_cntlr_0_bbox               |     1|
+|6     |design_microblaze_dlmb_v10_0_bbox                         |     1|
+|7     |design_microblaze_ilmb_bram_if_cntlr_0_bbox               |     1|
+|8     |design_microblaze_ilmb_v10_0_bbox                         |     1|
+|9     |design_microblaze_lmb_bram_0_bbox                         |     1|
+|10    |design_microblaze_mdm_1_0_bbox                            |     1|
+|11    |design_microblaze_microblaze_0_0_bbox                     |     1|
+|12    |design_microblaze_microblaze_0_axi_intc_0_bbox            |     1|
+|13    |design_microblaze_microblaze_0_axi_periph_imp_xbar_0_bbox |     1|
+|14    |design_microblaze_pwm_axi_0_0_bbox                        |     1|
+|15    |design_microblaze_rst_clk_wiz_1_100M_0_bbox               |     1|
+|16    |IBUF                                                      |    18|
+|17    |OBUF                                                      |    36|
++------+----------------------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 1781.641 ; gain = 1039.977
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:51 ; elapsed = 00:01:12 . Memory (MB): peak = 1781.641 ; gain = 1039.977
+Synthesis Optimization Complete : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 1781.641 ; gain = 1039.977
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 1782.566 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1785.879 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 6bfb2fd4
+INFO: [Common 17-83] Releasing license: Synthesis
+80 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:25 ; elapsed = 00:01:35 . Memory (MB): peak = 1785.879 ; gain = 1247.227
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1785.879 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.runs/synth_1/design_microblaze_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_microblaze_wrapper_utilization_synth.rpt -pb design_microblaze_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 16 15:05:06 2026...

@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:{C:/Users/HP/Documents/AHE_Lab/Lab 3/lab03_gpio_pwm/lab03_gpio_pwm.srcs/constrs_1/new/lab3_pwm.xdc} rfile:../../../lab03_gpio_pwm.srcs/constrs_1/new/lab3_pwm.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:5 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN N15   IOSTANDARD LVCMOS33 } [get_ports pwm_r]
+set_property src_info {type:XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN M16   IOSTANDARD LVCMOS33 } [get_ports pwm_g]
+set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN R12   IOSTANDARD LVCMOS33 } [get_ports pwm_b]

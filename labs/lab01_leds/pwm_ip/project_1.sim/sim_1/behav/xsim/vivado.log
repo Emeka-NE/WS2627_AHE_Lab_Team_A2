@@ -1,0 +1,35 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 27-oct-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Oct 28 12:21:49 2026
+# Process ID         : 10088
+# Current directory  : C:/Users/kamal/Documents/Study/Advanced Hardware Engineering/Lab/project_1/project_1.sim/sim_1/behav/xsim
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent34132 C:\Users\kamal\Documents\Study\Advanced Hardware Engineering\Lab\project_1\project_1.sim\sim_1\behav\xsim\tb_pwm_behav.wdb
+# Log file           : C:/Users/kamal/Documents/Study/Advanced Hardware Engineering/Lab/project_1/project_1.sim/sim_1/behav/xsim/vivado.log
+# Journal file       : C:/Users/kamal/Documents/Study/Advanced Hardware Engineering/Lab/project_1/project_1.sim/sim_1/behav/xsim\vivado.jou
+# Running On         : DESKTOP-PTGJ0M0
+# Platform           : Windows 11
+# Operating System   : 26300
+# Processor Detail   : Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
+# CPU Frequency      : 2592 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 34253 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36400 MB
+# Available Virtual  : 13688 MB
+#-----------------------------------------------------------
+start_gui
+open_wave_database {C:\Users\kamal\Documents\Study\Advanced Hardware Engineering\Lab\project_1\project_1.sim\sim_1\behav\xsim\tb_pwm_behav.wdb}
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2026.1/Vivado/data/ip'.
+current_fileset: Time (s): cpu = 00:00:24 ; elapsed = 00:00:15 . Memory (MB): peak = 1681.047 ; gain = 256.242
+open_wave_database: Time (s): cpu = 00:00:25 ; elapsed = 00:00:15 . Memory (MB): peak = 1681.047 ; gain = 256.242
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 28 12:23:15 2026...

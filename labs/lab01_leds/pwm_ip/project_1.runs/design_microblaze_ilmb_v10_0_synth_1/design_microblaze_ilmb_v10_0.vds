@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Tue Nov  3 12:36:54 2026
+# Process ID         : 8884
+# Current directory  : C:/Users/Public/Documents/lab2_microblaze/lab2_microblaze.runs/design_microblaze_ilmb_v10_0_synth_1
+# Command line       : vivado.exe -log design_microblaze_ilmb_v10_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_microblaze_ilmb_v10_0.tcl
+# Log file           : C:/Users/Public/Documents/lab2_microblaze/lab2_microblaze.runs/design_microblaze_ilmb_v10_0_synth_1/design_microblaze_ilmb_v10_0.vds
+# Journal file       : C:/Users/Public/Documents/lab2_microblaze/lab2_microblaze.runs/design_microblaze_ilmb_v10_0_synth_1\vivado.jou
+# Running On         : LAB49-08
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 19045
+# Processor Detail   : Intel(R) Core(TM) i5-8600 CPU @ 3.10GHz
+# CPU Frequency      : 3096 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 6
+# Host memory        : 34181 MB
+# Swap memory        : 5100 MB
+# Total Virtual      : 39281 MB
+# Available Virtual  : 23113 MB
+#-----------------------------------------------------------
+source design_microblaze_ilmb_v10_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 495.195 ; gain = 210.008
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_microblaze_ilmb_v10_0, cache-ID = 74f38e7fbe6fe7b1.
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  3 12:37:09 2026...

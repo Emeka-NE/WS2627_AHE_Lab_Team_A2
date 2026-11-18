@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kamal/Documents/Study/Advanced Hardware Engineering/Lab/project_1/project_1.srcs/sources_1/new/pwm_core.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'pwm_core'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/kamal/Documents/Study/Advanced Hardware Engineering/Lab/project_1/project_1.srcs/sim_1/new/tb_pwm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_pwm'
